@@ -1,0 +1,11 @@
+C:\Users\pc\Desktop\final package\bin\Debug\final package.exe.config
+C:\Users\pc\Desktop\final package\bin\Debug\final package.exe
+C:\Users\pc\Desktop\final package\bin\Debug\final package.pdb
+C:\Users\pc\Desktop\final package\obj\Debug\final package.csproj.AssemblyReference.cache
+C:\Users\pc\Desktop\final package\obj\Debug\final package.csproj.SuggestedBindingRedirects.cache
+C:\Users\pc\Desktop\final package\obj\Debug\final_package.Form1.resources
+C:\Users\pc\Desktop\final package\obj\Debug\final_package.Properties.Resources.resources
+C:\Users\pc\Desktop\final package\obj\Debug\final package.csproj.GenerateResource.cache
+C:\Users\pc\Desktop\final package\obj\Debug\final package.csproj.CoreCompileInputs.cache
+C:\Users\pc\Desktop\final package\obj\Debug\final package.exe
+C:\Users\pc\Desktop\final package\obj\Debug\final package.pdb
