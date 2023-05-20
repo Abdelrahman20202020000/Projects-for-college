@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Radio Canada', sans-serif;
+}
+body{
+    background-color:rgb(13, 4, 35);
+}
+    /* video */
+.gaming .back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+@media (min-aspect-ratio:16/9){
+.gaming .back-video{
+        width: auto;
+        height: 100%;
+
+    }
+@media (min-aspect-ratio:16/9){
+.gaming .back-video{
+        width: 100%;
+        height: auto;
+
+    }
+}
+}
+    /* end of video */
+/* side bar */
+#mainbox{
+    font-size: 24px;
+    cursor: pointer;
+    transition: all .6s ;
+    color: white;
+}
+.gaming .sidebar{
+    margin: 20px 40px;
+    
+}
+.gaming .sidemenu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 0px;
+    background-color: rgb(18, 4, 69);
+    z-index: 1;
+    padding-top: 100px;
+    overflow-x: hidden;
+    transition: all 0.5s;
+    
+}   
+.gaming .sidemenu a{
+    padding: 8px 8px 8px 64px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;   
+}
+.gaming .sidemenu a:hover{
+    color: rgb(103, 98, 166);
+}
+.gaming .sidemenu .closebtn{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 32px;
+}
+/* end of sidebar */
+    /* animation */
+.gaming .animate{
+    height: 100vh;
+    max-width: 1080px;
+    color: white;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gaming .animate .co-left{
+    flex: 1;
+    margin-bottom: 1rem;
+}
+.gaming h1{
+    color: transparent;
+    font-size: 80px;
+    position:relative;
+    display: block;
+    width: fit-content;
+    animation: text_reveal .5s ease forwards;
+    animation-delay: 1s;
+}
+.gaming h1 span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0%;
+    background-color: rgb(22, 12, 78);
+    animation: overlay 1s ease forwards;
+    animation-delay: .5s; 
+}
+.gaming h1:nth-child(1){
+    animation-delay:1s;
+}
+.gaming h1:nth-child(2){
+    animation-delay:2s;
+}
+.gaming h1:nth-child(3){
+    animation-delay:3s;
+}
+.gaming h1:nth-child(1) span{
+    animation-delay:.5s;
+}
+.gaming h1:nth-child(2) span{
+    animation-delay:1.5s;
+}
+.gaming h1:nth-child(3) span{
+    animation-delay:2.5s;
+}
+
+
+
+ @keyframes overlay{
+    50%{
+        width: 100%;
+        left: 0
+    }
+    100%{
+        left: 100%;
+        width: 0;
+    }
+}
+@keyframes text_reveal{
+    100%{
+        color: rgb(255, 255, 255);
+    }
+    /* end of animation */
+}
+    /* available now */
+.gaming .button{
+    background: rgb(14, 14, 74);
+    display: inline-block;
+    color: var(--text-color);
+    padding: 20px;
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 500;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 10% 100%, 0 82%);
+
+}
+.gaming .button:hover{
+    background: rgb(51, 83, 210);
+    transition: 0.3s all linear;
+}
+.gaming .available{
+    margin-top: 20px;
+}
+    /* available now */
+
+    /* cards */
+.gaming .cards{
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    /* background: #dcdcdd; */
+    background-color:rgb(13, 4, 35);
+
+}
+.gaming .container{
+    position: relative;
+    width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px , 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+    margin-top: 20px;
+}
+.gaming .container .card{
+    width: 100%;
+    background: rgb(72, 64, 123);
+    border-radius: 10px;
+}
+.gaming .container .card .imgBx{
+    position: relative;
+    width: 100%;
+    height: 310px;
+    overflow: hidden;
+    border-radius: 10px;
+
+}
+.gaming .container .card .imgBx:hover .overlay{
+    visibility: visible;
+    animation: fade 0.5s;
+}
+.gaming .container .card .imgBx a{
+    text-decoration: none;
+}
+.gaming .overlay{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    background-color:rgba(14, 15, 70, 0.6) ;
+    display: flex ; 
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+.gaming .buy-btn{
+    width: 160px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    color: #252525;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 20px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+}
+.gaming .buy-btn:hover{
+    color: #ffffff;
+    background-color: #16085c;
+    transition: all ease 0.3s;
+}
+
+.gaming .container .card .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s ease-in-out;
+}
+.gaming .container .card:hover .imgBx img{
+    transform: scale(1.5);
+}
+.gaming .container .card .content{
+    padding: 10px;
+}
+.gaming .container .card .content .product-name h3{
+    font-size: 18px;
+    font-weight: 500;
+    color:rgb(233, 234, 247);
+    margin: 5px 0;
+}
+.gaming .container .card .content .price-rating{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.gaming .container .card .content .price-rating h2{
+    font-size: 20px;
+    color: #ff2020;
+    font-weight: 500;
+}
+.gaming .container .card .content .fa{
+    color:rgb(255, 255, 19) ;
+    cursor: pointer;
+}
+.gaming .container .card .content .fa.grey{
+    color:rgb(219, 212, 212);            
+}
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+/* cards */

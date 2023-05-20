@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/employees.css">
+    <script src="../js/holiday.js"></script>
+</head>
+<body>
+    <nav>
+        <a href="employees.html" class="name"><h2 class="logo">Firm <span>System</span></h2></a>
+        <ul>
+            <li><a href="employees.html">Employees</a></li>
+            <li><a href="messages.html">Messages</a></li>
+            <li><a href="holidayt.html">Holidays</a></li>
+            <li><a href="promotion.html">Promotions</a></li>
+            <li><a href="demotion.html">Demotions</a></li>
+            <li><a href="leave.html">Resign request</a></li>
+            <li><a href="PayRoll.html">Payroll</a></li>
+            <li><a href="Company Information.html">Company Information</a></li>
+        </ul>
+        <button type="button">Log Out</button>
+    </nav>
+    <section id="Page">
+        <div class="lates-heading">
+            <h1>Holiday List</h1>
+        </div>
+    <div class="container">
+    <div class="card">
+        <div id="popup1" class="overlay1">
+            <div class="popup">
+                <!-- <h2>Here i am</h2> -->
+                <a class="close" href="#">&times;</a>
+                <div class="content1">
+                        <form>
+                    
+                        <label for="fname">Holidays Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Holiday Name">
+                    
+                        <label for="lname">Date Of Holiday</label>
+                        <input type="text" id="to" name="to" placeholder="To">
+                    
+                        <input onclick="myFunction()" type="submit"  value="Submit">
+                        </form>
+                </div>
+            </div>
+        </div>
+        <div class="imgBx">
+            <img src="../images/animate.webp" class="profile-pic">
+            <div class="overlay">
+                <!-- buy button -->
+                <a href="#popup1" class="choose-btn"><span>&#43;</span></a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="product-name">
+                <h3>Add New Holiday</h3>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="imgBx">
+            <img src="../images/new year.png" class="profile-pic">
+            <div class="overlay">
+                <!-- buy button -->
+            </div>
+        </div>
+        <div class="content">
+            <div class="product-name">
+                <h3>1/1/2023</h3>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="imgBx">
+            <img src="../images/ramadan-days.jpg" class="profile-pic">
+            <div class="overlay">
+                <!-- buy button -->
+            </div>
+        </div>
+        <div class="content">
+            <div class="product-name">
+                <h3>22/3/2023</h3>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+</section>
+
+</body>
+</html>
